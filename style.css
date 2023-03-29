@@ -22,6 +22,7 @@ h1 {
   width: 45%;
   display: flex;
   flex: 1;
+  padding-bottom: 25px;
 }
 
 .left {
@@ -58,4 +59,12 @@ button:hover {
   font-weight: 400;
   border-bottom: 2px solid black;
   border-right: 2px solid black;
+}
+.check {
+  cursor: pointer;
+  background-color: lightcyan;
+  width: 45%;
+  text-align: center;
+  padding: 3%;
+  border: 3px solid black;
 }
