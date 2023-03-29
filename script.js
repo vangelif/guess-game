@@ -7,5 +7,5 @@
 // console.log(document.querySelector('.guess').value);
 
 document.querySelector('.check').addEventListener('click', () => {
-  console.log('hello!');
+  console.log(document.querySelector('.guess').value);
 });
