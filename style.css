@@ -24,7 +24,9 @@ h1 {
   flex: 1;
   padding-bottom: 25px;
 }
-
+.again {
+  margin-bottom: 3%;
+}
 .left {
   right: 45%;
   margin-bottom: 5%;
@@ -60,8 +62,8 @@ button:hover {
   border-bottom: 2px solid black;
   border-right: 2px solid black;
 }
-.check {
-  cursor: pointer;
+.number {
+  /* cursor: pointer; */
   background-color: lightcyan;
   width: 45%;
   text-align: center;
