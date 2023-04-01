@@ -56,9 +56,7 @@
 
 ## 🚀 Live Demo <a name="live-demo"></a>
 
-- <a href="">Check out the live demo</a>
-
-- <a href="">Check out the live video</a>
+- <a href="https://vangelif.github.io/guess-game/">Check out the live demo</a>
 
 ## 💻 Getting Started <a name="getting-started"></a>
 

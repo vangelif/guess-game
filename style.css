@@ -11,12 +11,13 @@ html {
 
 body {
   padding: 15px;
-  background-color: bisque;
+  background-color: lightgoldenrodyellow;
 }
 
 h1 {
   margin-bottom: 5%;
 }
+
 .right {
   background-color: lightseagreen;
   width: 45%;
@@ -24,9 +25,11 @@ h1 {
   flex: 1;
   padding-bottom: 25px;
 }
+
 .again {
   margin-bottom: 3%;
 }
+
 .left {
   right: 45%;
   margin-bottom: 5%;
@@ -38,7 +41,7 @@ h1 {
 
 .left input {
   border: 3px solid black;
-  background-color: aquamarine;
+  background-color: lightseagreen;
   padding: 10px;
   width: 13rem;
   height: 5rem;
@@ -59,14 +62,18 @@ button {
 
 button:hover {
   font-weight: 400;
-  border-bottom: 2px solid black;
-  border-right: 2px solid black;
+  border-radius: 10px;
+  border: 1px;
+  border-bottom: 3px solid black;
+  border-right: 3px solid black;
 }
+
 .number {
   /* cursor: pointer; */
   background-color: lightcyan;
   width: 45%;
   text-align: center;
-  padding: 3%;
-  border: 3px solid black;
+  padding: 2%;
+  border: 8px solid black;
+  font-size: 50px;
 }
