@@ -35,7 +35,7 @@ document.querySelector('.click').addEventListener('click', () => {
   } else if (guess === secretNumber) {
     // document.querySelector('.message').textContent =
     //   'THAT IS A CORRECT GUESS!!!';
-    displayMessage('THAT IS A CORRECT GUESS!!!');
+    displayMessage('🎉🎉THAT IS A CORRECT GUESS!!!');
     displayNumber(secretNumber);
     // document.querySelector('.number').textContent = secretNumber;
 
@@ -50,8 +50,8 @@ document.querySelector('.click').addEventListener('click', () => {
     if (score > 1) {
       displayMessage(
         guess > secretNumber
-          ? 'Your guess is too high!'
-          : 'Your guess is too low!!'
+          ? '📈Your guess is too high!'
+          : '📉Your guess is too low!!'
       );
       // document.querySelector('.message').textContent =
       //   guess > secretNumber
@@ -62,7 +62,7 @@ document.querySelector('.click').addEventListener('click', () => {
       // document.querySelector('.score').textContent = score;
     } else {
       // document.querySelector('.message').textContent = 'You lost the game!';
-      displayMessage('You lost the game!');
+      displayMessage('💣💣You lost the game!');
       displayScore(0);
       // document.querySelector('.score').textContent = 0;
       displayNumber(secretNumber);
