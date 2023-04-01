@@ -6,11 +6,17 @@
     <link rel="stylesheet" href="style.css" />
     <nav>
       <header>
-        <h1>Guess my number</h1>
+        <h1>Guess my number (from 1 to 20)</h1>
+        <!-- <h4>(from 1 to 20)</h4> -->
       </header>
     </nav>
   </head>
   <body>
+    <main>
+      <button class="show-modal">Modal Button A</button>
+      <button class="show-modal">Modal Button B</button>
+      <button class="show-modal">Modal Button C</button>
+    </main>
     <button class="again">Try Again?</button>
     <section class="left">
       <input type="number" class="guess" />
@@ -19,12 +25,32 @@
     <section class="right">
       <p class="message">Pick a number...</p>
     </section>
-    <section>
+    <section class="bottom">
       <p class="number">??</p>
       <p class="label-score">🔑 Score: <span class="score">20</span></p>
       <p class="label-highscore">
         💎 Highscore: <span class="highscore">0</span>
       </p>
+    </section>
+    <section>
+      <div class="modal hidden">
+        <button class="close-modal">X</button>
+        <h2>This is a modal window</h2>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam
+          debitis sint quidem! Fuga amet itaque, minima odio enim obcaecati
+          nemo, natus, excepturi praesentium laborum modi possimus assumenda
+          provident quos optio. Lorem ipsum dolor sit amet, consectetur
+          adipisicing elit. Commodi cum a corrupti corporis! Nostrum ipsa cum
+          aliquid! Quis dicta quo necessitatibus, cupiditate veniam at itaque
+          tempora suscipit impedit libero expedita illum earum obcaecati quos
+          ipsam ratione repellat, vel iusto ab!
+        </p>
+      </div>
+      <div class="overlay hidden"></div>
+      <!-- <button class="show-modal">Modal Button A</button>
+      <button class="show-modal">Modal Button B</button>
+      <button class="show-modal">Modal Button C</button> -->
     </section>
     <script src="script.js"></script>
   </body>
