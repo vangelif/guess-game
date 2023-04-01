@@ -4,6 +4,36 @@ let secretNumber = Math.trunc(Math.random() * 20) + 1;
 let score = 20;
 let highscore = 0;
 
+const modal = document.querySelector('.modal');
+const overlay = document.querySelector('.overlay');
+const btnCloseModal = document.querySelector('.close-modal');
+const btnsShowModal = document.querySelectorAll('.show-modal');
+console.log(btnsShowModal);
+
+const displayModal = () => {
+  modal.classList.remove('hidden');
+  overlay.classList.remove('hidden');
+};
+
+const hideModal = () => {
+  modal.classList.add('hidden');
+  overlay.classList.add('hidden');
+};
+
+for (let i = 0; i < btnsShowModal.length; i++) {
+  console.log(btnsShowModal[i].textContent);
+  btnsShowModal[i].addEventListener('click', displayModal);
+  btnCloseModal.addEventListener('click', hideModal);
+  overlay.addEventListener('click', hideModal);
+  document.addEventListener('keydown', e => {
+    // console.log(e.timeStamp);
+    console.log(e.key);
+    if (e.key === 'Escape' && !modal.classList.contains('hidden')) {
+      hideModal();
+    }
+  });
+}
+
 const displayMessage = message => {
   document.querySelector('.message').textContent = message;
 };
